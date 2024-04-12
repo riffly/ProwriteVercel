@@ -1,7 +1,8 @@
 import React from "react";
+import logoimg from "../images/Logo002.png"
 import { NavLink } from "react-router-dom";
 
-import { FaMapMarkedAlt } from "react-icons/fa";
+// import { FaMapMarkedAlt } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import { FiMenu } from "react-icons/fi";
 
@@ -37,9 +38,7 @@ export default function Navbar() {
     >
       <div
         className={`border-test sticky z-20 w-full bg-gray-100 shadow md:bg-slate-950 md:shadow-none  ${
-          scrolled
-            ? "md:bg-slate-950 md:shadow-lg"
-            : null
+          scrolled ? "md:bg-slate-950 md:shadow-lg" : null
         }`}
       >
         <div className="container flex h-[72px] items-center justify-between px-6 py-4 sm:px-10">
@@ -53,8 +52,9 @@ export default function Navbar() {
               dropDown && setDropDown((prev) => !prev);
             }}
           >
-            <FaMapMarkedAlt className="relative -top-[3px] me-3 text-4xl" />
-            <span className="text-3xl font-semibold">Backpack</span>
+            
+            <img  className="relative -top-[3px] w-10 mr-1" src={logoimg} alt="" />
+            <span className="text-3xl font-semibold">PROWRITE</span>
           </NavLink>
 
           <span
@@ -85,7 +85,7 @@ export default function Navbar() {
 
             {/* Our Team Section */}
             <NavLink
-              to="/about"
+              to="/ourteam"
               onClick={() => {
                 window.scrollTo(0, 0);
               }}
@@ -125,7 +125,7 @@ export default function Navbar() {
 
             {/* Learn Section */}
             <NavLink
-              to="/about"
+              to="/learn"
               onClick={() => {
                 window.scrollTo(0, 0);
               }}

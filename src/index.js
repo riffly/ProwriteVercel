@@ -5,10 +5,12 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+// import About from "./pages/About";
 import Service from "./pages/Service";
 import Package from "./pages/Package";
 import Contact from "./pages/Contact";
+import OurTeam from "./pages/OurTeam";
+import Learn from "./pages/Learn";
 
 const router = createBrowserRouter([
   {
@@ -20,8 +22,12 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "about",
-        element: <About />,
+        path: "ourteam",
+        element: <OurTeam />,
+      },
+      {
+        path: "learn",
+        element: <Learn />,
       },
       {
         path: "service",
