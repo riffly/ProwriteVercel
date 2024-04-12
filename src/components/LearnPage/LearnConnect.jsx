@@ -6,6 +6,7 @@ function LearnConnect() {
     <div>
       <div>
         <LearnCom />
+        <LearnCom />
       </div>
     </div>
   );
