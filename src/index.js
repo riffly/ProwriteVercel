@@ -11,6 +11,7 @@ import Package from "./pages/Package";
 import Contact from "./pages/Contact";
 import OurTeam from "./pages/OurTeam";
 import Learn from "./pages/Learn";
+import Review from "./pages/Review.jsx"
 
 const router = createBrowserRouter([
   {
@@ -34,8 +35,8 @@ const router = createBrowserRouter([
         element: <Service />,
       },
       {
-        path: "package",
-        element: <Package />,
+        path: "review",
+        element: <Review />,
       },
       {
         path: "contact",

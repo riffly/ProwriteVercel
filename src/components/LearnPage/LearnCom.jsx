@@ -7,10 +7,10 @@ function LearnCom() {
   return (
     <div>
       {/* Image 1 */}
-      <div className=" mt-10 flex justify-center">
+      <div className=" mt-10 justify-center sm:flex sm:justify-center">
         <div className=" mx-10 mb-10">
-          <div className=" bg-orange-900">
-            <img className=" w-96 bg-orange-600 " src={img1} alt="" />
+          <div className="">
+            <img className=" w-96 " src={img1} alt="" />
           </div>
           <div className=" w-96">
             <h1 className=" my-2 text-xl font-bold">
@@ -30,8 +30,8 @@ function LearnCom() {
 
         {/* Image 2 */}
         <div className=" mx-10 mb-10">
-          <div className=" bg-orange-900">
-            <img className=" w-96 bg-orange-600 " src={img2} alt="" />
+          <div className="">
+            <img className=" w-96 " src={img2} alt="" />
           </div>
           <div className=" w-96">
             <h1 className=" my-2 text-xl font-bold">
@@ -51,8 +51,8 @@ function LearnCom() {
 
         {/* Image 3 */}
         <div className=" mx-10 mb-10">
-          <div className=" bg-orange-900">
-            <img className=" w-96 bg-orange-600 " src={img3} alt="" />
+          <div className=" ">
+            <img className=" w-96  " src={img3} alt="" />
           </div>
           <div className=" w-96">
             <h1 className=" my-2 text-xl font-bold">

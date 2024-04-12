@@ -1,5 +1,5 @@
 import React from "react";
-import logoimg from "../images/Logo002.png"
+import logoimg from "../images/Logo002.png";
 import { NavLink } from "react-router-dom";
 
 // import { FaMapMarkedAlt } from "react-icons/fa";
@@ -52,8 +52,11 @@ export default function Navbar() {
               dropDown && setDropDown((prev) => !prev);
             }}
           >
-            
-            <img  className="relative -top-[3px] w-10 mr-1" src={logoimg} alt="" />
+            <img
+              className="relative -top-[3px] mr-1 w-10"
+              src={logoimg}
+              alt=""
+            />
             <span className="text-3xl font-semibold">PROWRITE</span>
           </NavLink>
 
@@ -163,7 +166,7 @@ export default function Navbar() {
 
             {/* Review Section */}
             <NavLink
-              to="/package"
+              to="/review"
               onClick={() => {
                 window.scrollTo(0, 0);
               }}
