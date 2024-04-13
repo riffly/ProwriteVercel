@@ -12,19 +12,13 @@ function App() {
   }, []);
 
   return (
-    <div
-      className="grid text-gray-700"
-      data-aos="fade-zoom-in"
-      data-aos-easing="ease-in-back"
-      data-aos-delay="100"
-      data-aos-offset="0"
-    >
+<>
       <Navbar />
-      <div className="-translate-y-72 md:translate-y-0">
+    
         <Outlet />
-      </div>
+      
       <Footer />
-    </div>
+    </>
   );
 }
 

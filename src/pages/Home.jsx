@@ -10,9 +10,14 @@ import ContainSlider from "../components/slider/ContainSlider";
 import ServicesInHome from "../pages/ServicesInHome";
 import BlogHome from "../pages/BlogHome";
 import ContentHome from "../pages/ContentHome"
+import Parralax from "./Parralax";
 
 export default function Home() {
   return (
+
+
+    <>
+   
     <div
       className=""
       data-aos="fade-zoom-in"
@@ -22,16 +27,21 @@ export default function Home() {
     >
       <ContainSlider />
       <ServicesInHome />
+      {/* <ContentHome /> */}
+      
       <div className=" flex justify-center">
         <BlogHome />
       </div>
+      
       {/* <AboutSection />
       <ServiceSection />
       <DestinationSection />
       <PackageSection />
       <StepSection />
       <BookingForm /> */}
-      <ContentHome />
+      
     </div>
+    <Parralax />
+    </>
   );
 }
