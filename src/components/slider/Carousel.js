@@ -1,14 +1,10 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
 
 export default function Carousel({
   autoSlide = true,
   autoSlideInterval = 3000,
   slides,
-}: {
-  autoSlide?: boolean;
-  autoSlideInterval?: number;
-  slides: string[];
 }) {
   const [curr, setCurr] = useState(0);
 
@@ -30,7 +26,7 @@ export default function Carousel({
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
         {slides.map((img) => (
-          <img src={img} alt="" />
+          <img key={img} src={img} alt="" />
         ))}
       </div>
       <div className="absolute inset-0 flex items-center justify-between p-4">
@@ -52,6 +48,7 @@ export default function Carousel({
         <div className="flex items-center justify-center gap-2">
           {slides.map((_, i) => (
             <div
+              key={i}
               className={`
               h-3 w-3 rounded-full bg-white transition-all
               ${curr === i ? "p-2" : "bg-opacity-50"}
