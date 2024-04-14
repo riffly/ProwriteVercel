@@ -11,6 +11,7 @@ import ServicesInHome from "../pages/ServicesInHome";
 import BlogHome from "../pages/BlogHome";
 import ContentHome from "../pages/ContentHome"
 import Parralax from "./Parralax";
+import Carousel from "../components/Carosel/Carosel";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
       
     </div>
     <Parralax />
+    <Carousel />
     </>
   );
 }
