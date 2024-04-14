@@ -6,7 +6,7 @@ import img3 from "../images/HomeBlogIng003.png";
 function BlogHome() {
   return (
     <div>
-      <div className=" xl:mx-30 mx-auto items-center sm:flex">
+      <div className=" xl:mx-30 mx-auto mt-10 items-center sm:flex">
         <div className=" mx-10 mb-10">
           <div className=" bg-orange-900">
             <img className=" w-96 bg-orange-600 " src={img1} alt="" />
@@ -67,7 +67,7 @@ function BlogHome() {
           </div>
         </div>
       </div>
-      <div className=" flex justify-center mb-10">
+      <div className=" mb-10 flex justify-center">
         <button className=" items-center rounded-md bg-[#020617] px-9 py-3 text-white">
           Read More
         </button>

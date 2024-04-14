@@ -6,57 +6,44 @@ function OurTeamComp() {
   return (
     <div>
       <div className=" flex justify-center">
-        <div className=" mx-5 mb-10 rounded-xl border-4 border-indigo-950 sm:w-1/2 ">
+        <div className=" mx-10 mb-10 rounded-xl border-4 border-indigo-950 sm:w-1/2 ">
           <div className=" my-5 flex justify-center">
             <h1 className=" text-4xl font-bold">About Prowrite By Design</h1>
           </div>
-          <div className=" mx-10 mb-5 justify-center flex">
+          <div className=" mx-10 mb-10 flex justify-center">
             <p className=" text-center text-2xl">
-              Prowrite by Design is a boutique consulting and coaching firm that
-              specializes in supporting doctoral students pursuing professional
-              doctorates. Our expert team offers tailored guidance to students
-              in various fields, including but not limited to, Education (EdD),
-              Business Administration (DBA), Nursing Practice (DNP), Psychology
-              (PsyD), Public Health (DrPH), and Health Science (DHS). We
-              frequently work with students from these disciplines,
-              understanding their specific academic requirements and challenges.
-              Our services are designed to provide personalized support at every
-              stage of their doctoral journey, from research design and
-              methodology selection to data analysis and dissertation editing.
+              Prowrite is a specialized professional consulting, research, and
+              writing firm dedicated to assisting clinicians and medical
+              students who are immersed in the pursuit of professional
+              doctorates. Our seasoned team extends customized mentorship and
+              academic support specifically for the healthcare sector,
+              accommodating the unique needs of disciplines.
               <br />
-              Specializes in providing comprehensive academic coaching and
-              support services tailored specifically for traditional doctoral
-              degree students, such as those pursuing PhDs across various
-              disciplines. <br />
-              We understand the unique challenges faced by these students, from
-              navigating complex research methodologies to managing the demands
-              of dissertation writing. Our goal is to equip these scholars with
-              the skills and knowledge necessary to excel in their academic
-              journeys, ensuring they have the necessary resources to conduct
-              rigorous research, publish their findings, and contribute
-              meaningfully to their respective fields. This specialized focus
-              allows us to address the distinct needs of traditional doctoral
-              candidates, helping them achieve academic success and establish
-              their credibility in the academic community.
+              <br />
+              We are intimately familiar with the rigorous academic demands and
+              complex challenges that medical professionals face. Our services
+              are finely tuned to guide you through every segment of your
+              doctoral odyssey—from conceptualizing a research design and
+              choosing the appropriate methodology, through the intricacies of
+              data analysis, to the nuanced refinements of manuscript editing.{" "}
+              <br />
+              <br />
+              Our mission is to furnish medical scholars with the necessary
+              academic prowess and comprehensive resources required for
+              mastering complex clinical research, crafting impactful research
+              papers, and making significant contributions to the medical field.
+              Our specialized attention ensures that each step towards your
+              doctoral achievement is taken with confidence, paving the way for
+              your academic accomplishments to enhance your professional
+              standing and enrich the medical community at large.
             </p>
           </div>
         </div>
       </div>
 
       <TeamStructure
-        title="Jessica Parker, Ed.D. – Founder & CEO"
-        description="I’m a researcher and educator who is passionate about demystifying
-            the research and writing process for scholars. My research interests
-            are at the intersection of technology and education; I am
-            particularly intrigued by the potential of generative AI for
-            academic purposes, exploring how this technology can revolutionize
-            how we conduct research, teach, and learn. I invite you to follow my
-            research journey on ResearchGate. I have worked with a diverse range
-            of researchers and scholars, and I continue to teach Doctor of
-            Health Sciences students at MCPHS University. Before founding
-            Dissertation by Design, I was a Senior Research Director and managed
-            several grants with the Harvard School of Dental Medicine and
-            Northeastern University School of Nursing."
+        title="Meet the Brilliant Minds of Team Alpha at Prowrite.US!"
+        description="We are thrilled to introduce you to our extraordinary team of experts at Prowrite.US. Leading Team Alpha, we have three exceptional leaders:🔬 Doc Andrie, a seasoned Research Scientist renowned for his insightful analyses and innovative approaches to complex problems.📝 Doc Balley, our gifted Writer, whose eloquent prose and sharp wit bridge the gap between intricate research and accessible understanding.🩺 Doc Fiona, a compassionate and dedicated Doctor, whose expertise in medical research is enhancing lives every day.Supporting these incredible professionals, we have a dynamic team of 77 passionate Research Specialists. Together, they delve into diverse fields, pushing boundaries and pioneering new paths in scientific inquiry and applied knowledge.Stay tuned as we explore groundbreaking projects and discover new horizons. Join us on this journey of exploration and excellence!"
       />
       <BottomContent />
     </div>

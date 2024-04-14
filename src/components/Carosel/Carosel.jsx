@@ -5,16 +5,9 @@ const Carousel = () => {
 
   const pages = [
     {
-      title: "Page 1",
-      content: "This is the content of page 1.",
-    },
-    {
-      title: "Page 2",
-      content: "This is the content of page 2.",
-    },
-    {
       title: "Page 3",
-      content: "This is the content of page 3.",
+      content:
+        "Academic writing is an essential skill for researchers, educators, and students across disciplines. However, it is also a source of considerable anxiety, frustration, and even isolation.",
     },
   ];
 
@@ -23,23 +16,31 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full h-64 overflow-hidden bg-parralax1 bg-cover  bg-fixed">
-      <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentPage * 100}%)` }}>
-        {pages.map((page, index) => (
-          <div key={index} className="w-full h-full flex items-center justify-center">
-            <div className="text-center">
-              <h2 className="text-2xl font-bold mb-4">{page.title}</h2>
-              <p>{page.content}</p>
+    <div className="relative flex h-96 w-full items-center justify-center  overflow-hidden bg-parralax1 bg-cover bg-fixed">
+      <div
+        className="flex items-center  transition-transform duration-300 ease-in-out"
+        style={{ transform: `translateX(-${currentPage * 100}%)` }}
+      >
+        {pages.map((pages, index) => (
+          <div
+            key={index}
+            className="flex h-full w-full items-center justify-center"
+          >
+            <div className="flex w-1/2 text-center">
+              {/* <h2 className=" mb-4 text-3xl font-bold ">{pages.title}</h2> */}
+              <p className="text-2xl">{pages.content}</p>
             </div>
           </div>
         ))}
       </div>
-      <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center mb-4">
+      <div className="absolute bottom-0 left-0 right-0 mb-4 flex items-center justify-center">
         {pages.map((_, index) => (
           <button
             key={index}
             onClick={() => goToPage(index)}
-            className={`w-3 h-3 mx-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 ${currentPage === index ? 'bg-blue-500' : 'bg-gray-300'}`}
+            className={`mx-2 h-3 w-3 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              currentPage === index ? "bg-blue-500" : "bg-gray-300"
+            }`}
           />
         ))}
       </div>

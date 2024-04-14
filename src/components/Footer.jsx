@@ -119,19 +119,20 @@ export default function Footer() {
                 <div className="me-3 text-amber-500">
                   <FaMapMarkerAlt />
                 </div>{" "}
-                48/8, Bangkok, Thailand
+                85th Floor, One World Trade Center, New York, NY, United State,
+                10007
               </p>
               <p className=" mb-1 flex items-center">
                 <div className="me-3 text-amber-500">
                   <BsFillTelephoneFill />
                 </div>{" "}
-                +66 *** *** ****
+                +1 347 441 4178
               </p>
               <p className=" mb-1 flex items-center">
                 <div className="me-3 text-amber-500">
                   <MdEmail />
                 </div>{" "}
-                BackpackOfficial@example.com
+                hello@prowrite.us
               </p>
             </div>
           </div>
@@ -162,7 +163,7 @@ export default function Footer() {
         <div className="border-test mt-12 grid w-full grid-cols-1 md:flex md:justify-between">
           <div className="max-md:flex max-md:justify-center">
             <p className="max-sm:text-center">
-              &copy; 2024 Backpack, All Right Reserved. Created By *****
+              &copy; 2024 Prowrite, All Right Reserved.
             </p>
           </div>
           <div className=" max-md:mt-3 max-md:flex max-md:flex-wrap max-md:justify-center">
